@@ -16,8 +16,7 @@ body {
     grid-row-end: 11;
     grid-column-start: 1;
     grid-column-end: 11;
-
-    z-index: 50;
+    background-color: rgba(255,255,255, 0.7);
 }
 .login-nav {
     grid-row-start: 1;
@@ -74,14 +73,22 @@ body {
     flex-direction: column;
     align-self: center;
     justify-self: center;
-    border: 1px solid black;
-    box-shadow: 5px 10px rgba(10,10,10 , 0.2) ;
+    border: 2px solid #9c1718;
+    border-radius: 2px 10px 2px 10px;
+    box-shadow: 5px 10px rgba(10,10,10 , 0.1) ;
     padding: 10px;
+    min-width: 220px;
+    background-color: #ffff;
+    z-index: 100;
 }
 .close-icon {
     width: 10px;
     height: 10px;
     align-self: flex-end;
+}
+.close-icon:hover,
+.login-button:hover {
+    cursor: pointer;
 }
 .user-info,
 #id-field,
@@ -89,6 +96,10 @@ body {
 .login-button {
     display: flex;
     align-self: baseline;
+}
+#pin-field::placeholder,
+#id-field::placeholder {
+    color: red;
 }
 .user-info {
     margin-top: 5px;
