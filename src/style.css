@@ -1,8 +1,9 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
 }
+
 body {
     display: grid;
     grid-template-rows: repeat(10, 10vh);
@@ -11,13 +12,15 @@ body {
     background-size: cover;
     background-position-x: center;
 }
+
 .layer {
     grid-row-start: 1;
     grid-row-end: 11;
     grid-column-start: 1;
     grid-column-end: 11;
-    background-color: rgba(255,255,255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
 }
+
 .login-nav {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -29,41 +32,61 @@ body {
     justify-content: space-between;
 
 }
+
 .company-info {
     display: flex;
     flex-direction: row;
     margin-left: 75px;
 }
-.company-text  {
+
+.company-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .company-info img {
     height: 40px;
     width: 40px;
 }
+
 .company-text h1 {
     font-size: 15px;
 }
+
 .company-text p {
     font-size: 10px;
 }
+
 .login-link {
     border-top: 2px solid #9c1718;
     color: #ffff;
     border-radius: 3px 10px 3px 10px;
     padding: 0px 5px 0px 5px;
-    background-color: rgba(160, 24,20, 1.0);
+    background-color: rgba(160, 24, 20, 1.0);
     user-select: none;
     margin-right: 75px;
     align-self: center;
     text-align: center;
     border-top: 2px solid #7e7f7e;
 }
+
 .login-link:hover {
     cursor: pointer;
 }
+
+.user-icon {
+    margin-right: 75px;
+    align-self: flex-end;
+}
+
+.user-icon img {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #9c1718;
+    border-radius: 3px 10px 3px 10px;
+}
+
 .login {
     grid-row-start: 1;
     grid-row-end: 11;
@@ -75,21 +98,25 @@ body {
     justify-self: center;
     border: 2px solid #9c1718;
     border-radius: 2px 10px 2px 10px;
-    box-shadow: 5px 10px rgba(10,10,10 , 0.1) ;
+    box-shadow: 5px 10px rgba(10, 10, 10, 0.1);
     padding: 10px;
     min-width: 220px;
     background-color: #ffff;
     z-index: 100;
 }
+
 .close-icon {
     width: 10px;
     height: 10px;
     align-self: flex-end;
 }
+
 .close-icon:hover,
-.login-button:hover {
+.login-button:hover,
+.user-icon:hover {
     cursor: pointer;
 }
+
 .user-info,
 #id-field,
 #pin-field,
@@ -97,17 +124,21 @@ body {
     display: flex;
     align-self: baseline;
 }
+
 #pin-field::placeholder,
 #id-field::placeholder {
     color: red;
 }
+
 .user-info {
     margin-top: 5px;
     margin-bottom: 15px;
 }
+
 .login-button {
     margin-top: 10px;
 }
+
 .hidden {
     display: none;
 }
